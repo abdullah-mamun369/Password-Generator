@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CD -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daizy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main class="flex flex-col justify-center items-center">
+        <div>
+            <h1 class="text-secondary text-5xl font-semibold  pb-16 text-center ">Zombit password Generator</h1>
+        </div>
+
+        <div class="flex justify-between items-center h-4/6 w-6/12">
+            <!-- Input Section -->
+            <section class="flex justify-center items-center ">
+                <div>
+
+                    <!-- Password Length -->
+                    <div class="mb-10">
+                        <h3 class="text-white text-xl mb-2 font-light"> What will be the password length?</h3>
+                        <input checked type="text" placeholder="Type here" id="length"
+                            class="input input-bordered input-secondary w-full" />
+                    </div>
+
+                    <!-- Uppercase -->
+                    <div class="mb-10 flex">
+                        <input checked id="uppercase" type="checkbox" class="checkbox checkbox-secondary mr-3" />
+                        <h3 class="text-white text-xl mb-2 font-light">Upercase?</h3>
+
+                    </div>
+
+
+                    <!-- Lowercase -->
+                    <div class="mb-10 flex">
+                        <input checked id="lowercase" type="checkbox" class="checkbox checkbox-secondary mr-3" />
+                        <h3 class="text-white text-xl mb-2 font-light">Lowercase?</h3>
+
+                    </div>
+
+                    <!-- Number -->
+                    <div class="mb-10 flex">
+                        <input checked id="numeric" type="checkbox" class="checkbox checkbox-secondary mr-3" />
+                        <h3 class="text-white text-xl mb-2 font-light"> Numeric?</h3>
+
+                    </div>
+
+
+                    <!-- Special Character -->
+                    <div class="mb-10 flex">
+                        <input checked id="character" type="checkbox" class="checkbox checkbox-secondary mr-3" />
+                        <h3 class="text-white text-xl mb-2 font-light">Special character?</h3>
+
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button id="submit" class="btn btn-secondary w-full">Submit</button>
+                </div>
+            </section>
+            <section class="flex ">
+                <h3 class="text-white text-xl mb-2 font-light">Your password is: <span id="password"
+                        class="mr-4 ml-2"></span></h3>
+                <button class="disabled:opacity-75">
+                    <svg id="copy" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white animate-bounce">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+                    </svg>
+                </button>
+
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- Script link -->
+    <script src="/index.js"></script>
+</body>
+
+</html>
