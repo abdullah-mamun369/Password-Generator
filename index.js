@@ -53,7 +53,9 @@ document.getElementById("submit").addEventListener("click", function () {
 })
 
 
-document.getElementById("copy").addEventListener("click", function () {
+document.getElementById("copy").addEventListener("click", () => {
+
+    const copyPassword = password.innerText;
 
 
 })
