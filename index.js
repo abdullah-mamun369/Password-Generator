@@ -57,5 +57,6 @@ document.getElementById("copy").addEventListener("click", () => {
 
     const copyPassword = password.innerText;
 
+    navigator.clipboard.writeText(copyPassword);
 
 })
