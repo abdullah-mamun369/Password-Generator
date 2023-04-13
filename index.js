@@ -31,17 +31,20 @@ document.getElementById("submit").addEventListener("click", function () {
 
     let generatedPassword = "";
 
+    // Type-1=================================
+
     for (let i = 0; i < lengtType; i++) {
         const upperPass = upperWord[Math.floor(Math.random() * 26)]
         const lowerPass = lowerWord[Math.floor(Math.random() * 26)]
         const numPass = numbers[Math.floor(Math.random() * 10)]
         const specialPass = special[Math.floor(Math.random() * 25)]
 
-        // console.log(Math.floor(Math.random() * 26));
 
         const singlePass = [upperPass, lowerPass, numPass, specialPass]
 
         const formatType = []
+
+        console.log(formatType);
 
         for (let j = 0; j < checkedValue.length; j++) {
             if (checkedValue[j] === true) {
